@@ -1,0 +1,64 @@
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1em 2em;
+  color: #335d92;
+  background-color: rgba(68, 107, 158, 0.1);
+  border-radius: 2em;
+  border: 2px solid rgba(68, 107, 158, 0);
+  outline: none;
+  width: 200px;
+  font-variant-numeric: tabular-nums;
+}
+
+.button:focus:not(:disabled) {
+  border: 2px solid #335d92;
+}
+
+.button:active:not(:disabled) {
+  background-color: rgba(68, 107, 158, 0.2);
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: rgba(68, 107, 158, 0.1);
+  height: 5em;
+  margin-bottom: 2em;
+}
+
+.amount {
+  display: block;
+  height: 100%;
+  background-color: #c8e6c9;
+}
+
+[data-level="1"] .amount {
+  background-color: #81c784;
+}
+
+[data-level="2"] .amount {
+  background-color: #4caf50;
+}
+
+[data-level="3"] .amount {
+  background-color: #388e3c;
+}
+
+[data-level="4"] .amount {
+  background-color: #1b5e20;
+}
+
+[data-level="5"] .amount {
+  background-color: #6200ea;
+}
+
+.increment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+}
